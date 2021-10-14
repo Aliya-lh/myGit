@@ -22,25 +22,25 @@ public class Test {
 
 
 
-//    public int Fibonacci(int n){
-//        if(n<2){
-//            return n;
-//        }return Fibonacci(n-1)+Fibonacci(n-2);
-//    }
-//    public static void main(String[] args){
-//        Scanner scan = new Scanner(System.in);
-//        int ret = scan.nextInt();
-//        System.out.println();
-//    }
+    public int Fibonacci(int n){
+        if(n<2){
+            return n;
+        }return Fibonacci(n-1)+Fibonacci(n-2);
+    }
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int ret = scan.nextInt();
+        System.out.println();
+    }
 
 
 
 
-//    public int jumpFloor(int target) {
-//        if(target<=3){
-//            return target;
-//        }return jumpFloor(target-1)+jumpFloor(target-2);
-//    }
+    public int jumpFloor(int target) {
+        if(target<=3){
+            return target;
+        }return jumpFloor(target-1)+jumpFloor(target-2);
+    }
 
 
 
@@ -50,16 +50,16 @@ public class Test {
 
 
 
-//    public int jumpFloorII(int target) {
-//        if(target<2){
-//            return 1;
-//        }
-//        int sum = 0;
-//        for(int i=1;i<=target;i++){
-//            sum+=jumpFloorII(target-i);
-//        }
-//        return sum;
-//    }
+    public int jumpFloorII(int target) {
+        if(target<2){
+            return 1;
+        }
+        int sum = 0;
+        for(int i=1;i<=target;i++){
+            sum+=jumpFloorII(target-i);
+        }
+        return sum;
+    }
 
 
 
