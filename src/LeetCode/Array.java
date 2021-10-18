@@ -3,28 +3,28 @@ package LeetCode;
 import java.util.Arrays;
 
 public class Array {
-//    public static int search(int[] nums, int target) {
-//        int left = 0;
-//        int right = nums.length - 1;
-//        while (left <= right) {
-//            int mid = (left + right) / 2;
-//            if (nums[mid] > target) {
-//                right = mid - 1;
-//            } else if (nums[mid] < target) {
-//                left = mid + 1;
-//            } else {
-//                return mid;
-//            }
-//        }
-//        return -1;
-//    }
-//
-//    public static void main(String[] args) {
-//        //1.数组 二分查找
-//        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};//二分查找前提是数组中元素是有序的
-//        int target = 5;
-//        System.out.println(search(nums, target));
-//    }
+    public static int search(int[] nums, int target) {
+        int left = 0;
+        int right = nums.length - 1;
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] > target) {
+                right = mid - 1;
+            } else if (nums[mid] < target) {
+                left = mid + 1;
+            } else {
+                return mid;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        //1.数组 二分查找
+        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};//二分查找前提是数组中元素是有序的
+        int target = 5;
+        System.out.println(search(nums, target));
+    }
 
 //
 //    public static int search(int[] arr, int toFind) {
