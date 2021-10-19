@@ -3,28 +3,28 @@ package LeetCode;
 import java.util.Arrays;
 
 public class Array {
-    public static int search(int[] nums, int target) {
-        int left = 0;
-        int right = nums.length - 1;
-        while (left <= right) {
-            int mid = (left + right) / 2;
-            if (nums[mid] > target) {
-                right = mid - 1;
-            } else if (nums[mid] < target) {
-                left = mid + 1;
-            } else {
-                return mid;
-            }
-        }
-        return -1;
-    }
-
-    public static void main(String[] args) {
-        //1.数组 二分查找
-        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};//二分查找前提是数组中元素是有序的
-        int target = 5;
-        System.out.println(search(nums, target));
-    }
+//    public static int search(int[] nums, int target) {
+//        int left = 0;
+//        int right = nums.length - 1;
+//        while (left <= right) {
+//            int mid = (left + right) / 2;
+//            if (nums[mid] > target) {
+//                right = mid - 1;
+//            } else if (nums[mid] < target) {
+//                left = mid + 1;
+//            } else {
+//                return mid;
+//            }
+//        }
+//        return -1;
+//    }
+//
+//    public static void main(String[] args) {
+//        //1.数组 二分查找
+//        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9};//二分查找前提是数组中元素是有序的
+//        int target = 5;
+//        System.out.println(search(nums, target));
+//    }
 
 //
 //    public static int search(int[] arr, int toFind) {
@@ -239,6 +239,26 @@ public class Array {
 //       return a;
 //   }
 
+
+    public static void main(String[] args) {
+        //合并两个有序数组A和B 要求不创建新的数组
+        //A数组的空间为m+n  初始有m个元素    B数组初始有n个元素  把数组B放进A中，并且排序（升序）
+        int[] A = {1,2,3};
+        int[] B = {4,5,6};
+     
+
+    }
+    public  static void merge(int A[], int m, int B[], int n) {
+        int j = 0;//数组B中的元素下标
+        if(n>0){//如果数组B不为空数组
+            for (int i = 0; i < A.length; i++) {//遍历A数组
+                if(A[i]==0 && j<B.length){
+                    A[i]=B[j++];
+                }
+            }
+        }
+        Arrays.sort(A);
+    }
 }
 
 
