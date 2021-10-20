@@ -219,46 +219,46 @@ public class Array {
 //
 
 
-//    public static void main(String[] args) {
-//        //数组转字符串
-//        //实现一个方法 toString, 把一个整型数组转换成字符串. 例如数组 {1, 2, 3} ,
-//        // 返回的字符串为 "[1, 2, 3]", 注意 逗号 的位置和数量.
-//        int[] arr = {1,2,3};
-//        String a = toString(arr);
-//        System.out.println(a);
-//    }
-//   public static String toString(int[] arr){
-//        String a = "[";
-//       for (int i = 0; i < arr.length; i++) {
-//           a += arr[i];
-//           if(i !=arr.length-1){
-//               a +=",";
-//           }
-//       }
-//       a +="]";
-//       return a;
-//   }
-
-
     public static void main(String[] args) {
-        //合并两个有序数组A和B 要求不创建新的数组
-        //A数组的空间为m+n  初始有m个元素    B数组初始有n个元素  把数组B放进A中，并且排序（升序）
-        int[] A = {1,2,3};
-        int[] B = {4,5,6};
-     
+        //数组转字符串
+        //实现一个方法 toString, 把一个整型数组转换成字符串. 例如数组 {1, 2, 3} ,
+        // 返回的字符串为 "[1, 2, 3]", 注意 逗号 的位置和数量.
+        int[] arr = {1,2,3};
+        String a = toString(arr);
+        System.out.println(a);
+    }
+   public static String toString(int[] arr){
+        String a = "[";
+       for (int i = 0; i < arr.length; i++) {
+           a += arr[i];
+           if(i !=arr.length-1){
+               a +=",";
+           }
+       }
+       a +="]";
+       return a;
+   }
 
-    }
-    public  static void merge(int A[], int m, int B[], int n) {
-        int j = 0;//数组B中的元素下标
-        if(n>0){//如果数组B不为空数组
-            for (int i = 0; i < A.length; i++) {//遍历A数组
-                if(A[i]==0 && j<B.length){
-                    A[i]=B[j++];
-                }
-            }
-        }
-        Arrays.sort(A);
-    }
+
+//    public static void main(String[] args) {
+//        //合并两个有序数组A和B 要求不创建新的数组
+//        //A数组的空间为m+n  初始有m个元素    B数组初始有n个元素  把数组B放进A中，并且排序（升序）
+//        int[] A = {1,2,3};
+//        int[] B = {4,5,6};
+//
+//
+//    }
+//    public  static void merge(int A[], int m, int B[], int n) {
+//        int j = 0;//数组B中的元素下标
+//        if(n>0){//如果数组B不为空数组
+//            for (int i = 0; i < A.length; i++) {//遍历A数组
+//                if(A[i]==0 && j<B.length){
+//                    A[i]=B[j++];
+//                }
+//            }
+//        }
+//        Arrays.sort(A);
+//    }
 }
 
 
