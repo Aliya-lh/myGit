@@ -42,6 +42,8 @@ public class Test {
 
 
 
+
+
     public static void drawMap(Shape shape){//参数类型为父类
         shape.draw();
     }
