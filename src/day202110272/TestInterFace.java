@@ -69,6 +69,9 @@ class Frog extends Animal implements IRunning, ISwimming {
         super(name);
     }
 
+
+
+
     @Override
     public void run() {
         System.out.println(this.name + "正在往前跳");
