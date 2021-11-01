@@ -1,7 +1,7 @@
 package com.bit.demo20211101;
 //类和对象（补充）
 //对象初始化
-//    public class Test {
+   public class Test {
 //        public static void main1(String[] args) {
 //            int a = 0;//在Java方法内部定义一个局部变量时，必须要初始化，否则会编译失败
 //            System.out.println(a);
@@ -52,28 +52,43 @@ package com.bit.demo20211101;
 ////4. 构造方法可以重载(用户根据自己的需求提供不同参数的构造方法
 //        }
 //
-class B {
-    public int Func() {
-        System.out.print("B");
-        return 0;
-    }
-}
-class D extends B {//D 继承 B
-    @Override
-    public int Func() {
-        System.out.print("D");
-        return 0;
-    }
-}
-public class Test {
-    public static void main(String[] args) {
-        B a = new B();
-        B b = new D();
-        a.Func();
-        b.Func();
-    }
-}
+//class B {
+//    public int Func() {
+//        System.out.print("B");
+//        return 0;
+//    }
+//}
+//class D extends B {//D 继承 B
+//    @Override
+//    public int Func() {
+//        System.out.print("D");
+//        return 0;
+//    }
+//}
+//public class Test {
+//    public static void main(String[] args) {
+//        B a = new B();
+//        B b = new D();
+//        a.Func();
+//        b.Func();
+//    }
+//}
 
+
+    public static void main(String[] args) {
+        int x = 0;
+        int y = 0;
+        int k = 0;
+        for (int z = 0; z < 5; z++) {
+            if ((++x > 2) && (++y > 2) && (k++ > 2)) {
+                x++;
+                ++y;
+                k++;
+            }
+        }
+        System.out.println(x + "" + y + ""+k);//521
+    }
+}
 
    // }
 
