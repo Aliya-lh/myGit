@@ -4,6 +4,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
+
 //String类
 //从内存和常用方法来讲
 public class Test {
