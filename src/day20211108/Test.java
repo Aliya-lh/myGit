@@ -68,6 +68,7 @@ class Computer {
 
 
 
+
 public class Test {
     public static void main(String[] args) {
         Computer computer = new Computer("HW","i7","8G","13*14");//实例化一个对象并且传入参数
