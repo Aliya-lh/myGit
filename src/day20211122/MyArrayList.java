@@ -19,7 +19,17 @@ public class MyArrayList {
 
     }
     //在pos位置插入一个元素
+    public void add(int pos,int data){
 
+    }
+    public boolean contains(int toFind){
+        return true;
+        //判断是否含有某个元素
+    }
+
+    public int search(int toFind){
+        return -1;
+    }
 
     public static void main(String[] args) {
         MyArrayList myArrayList = new MyArrayList();
