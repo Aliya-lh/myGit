@@ -17,5 +17,6 @@ public class TestDemo {
 //        myLinkedList.display();//尾插法 打印出来数字是正序的
 
 
+
     }
 }

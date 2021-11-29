@@ -65,6 +65,7 @@ public class MyLinkedList {//以不带头节点的单向非循环列表演示：
 
     }
 
+
     private Node searchIndex(int index){
         //1、对index进行合法性检查
         if(index<0||index>this.size()){
