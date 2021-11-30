@@ -51,6 +51,7 @@ public class MyLinkedList {//以不带头节点的单向非循环列表演示：
 
 
 
+
     //任意位置插入，第一个数据节点为0号下标
     public boolean addIndex(int index,int data) {
         if (index == 0) {
