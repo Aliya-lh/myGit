@@ -47,6 +47,7 @@ public class MyLinkedList {//以不带头节点的单向非循环列表演示：
             cur = cur.next;
         }//跳出循环说明cur.next为空了
         cur.next = node;
+
     }
 
 
