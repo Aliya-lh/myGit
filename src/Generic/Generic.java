@@ -28,6 +28,7 @@ import java.util.ArrayList;
  */
 
 
+
 class MyArrayList<T>{//一般在此处写<T>或者<E>
     private T[] elem;//T最后其实就是一个Object
     private int usedSize;
